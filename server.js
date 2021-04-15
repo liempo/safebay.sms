@@ -16,7 +16,7 @@ server.use('/', [
 ])
 
 // Start the server
-server.listen(7000, error => {
+server.listen(process.env.PORT || 7000, error => {
   if (error) console.error('Error starting', error)
   else console.log('Started at http://localhost:7000')
 })
